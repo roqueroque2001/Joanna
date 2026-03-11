@@ -2,228 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>For Joanna Mae</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins&family=Great+Vibes&display=swap" rel="stylesheet">
+<title>Welcome Joanna Mae</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-margin:0;
-background:#e8f6ff;
+background:#e6f6ff;
 font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
 text-align:center;
-color:#333;
+color:#1a2a3a;
 }
-
-/* sections */
 
 section{
-padding:80px 20px;
-}
-
-h1{
-font-size:50px;
-color:#4aa3df;
-}
-
-h2{
-font-size:35px;
-color:#4aa3df;
-}
-
-/* intro */
-
-.intro{
-font-family:'Great Vibes',cursive;
-font-size:28px;
-}
-
-/* story */
-
-.story{
-font-family:'Dancing Script',cursive;
-font-size:26px;
-max-width:700px;
+padding:60px 20px;
+max-width:800px;
 margin:auto;
 }
 
-/* why like */
-
-.why{
-font-family:'Pacifico',cursive;
-font-size:24px;
+h1,h2{
+margin-bottom:20px;
 }
-
-/* hearts */
-
-.heart{
-color:#6ec6ff;
-font-size:30px;
-}
-
-/* images */
 
 img{
-width:260px;
-border-radius:20px;
+width:100%;
+max-width:600px;
+border-radius:12px;
 margin-top:20px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* magical name */
+.welcome{
+font-family:'Playfair Display',serif;
+}
 
-.magic{
-font-size:55px;
+.story{
+font-family:'Dancing Script',cursive;
+font-size:22px;
+}
+
+.like{
+font-family:'Poppins',sans-serif;
+}
+
+.song{
 font-family:'Pacifico',cursive;
-color:#4aa3df;
+}
+
+.magic-name{
+font-size:40px;
+font-family:'Pacifico',cursive;
+color:#0099ff;
 animation:glow 2s infinite alternate;
 }
 
 @keyframes glow{
-from{ text-shadow:0 0 10px #9edcff;}
-to{ text-shadow:0 0 25px #4aa3df;}
+from{ text-shadow:0 0 10px #66ccff;}
+to{ text-shadow:0 0 25px #0099ff;}
 }
 
-/* music */
+/* floating hearts */
 
-.music-box{
-background:white;
-padding:30px;
-border-radius:20px;
-width:300px;
-margin:auto;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* hearts floating */
-
-.heart-bg{
+.heart{
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-z-index:-1;
-}
-
-.heart-bg span{
-position:absolute;
-color:#a6ddff;
+bottom:-20px;
+font-size:20px;
+color:#66ccff;
 animation:float 10s linear infinite;
 }
 
 @keyframes float{
-from{
-transform:translateY(100vh);
-}
-to{
-transform:translateY(-10vh);
-}
+0%{transform:translateY(0); opacity:1;}
+100%{transform:translateY(-120vh); opacity:0;}
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="heart-bg">
-<span style="left:10%"></span>
-<span style="left:30%"></span>
-<span style="left:50%"></span>
-<span style="left:70%"></span>
-<span style="left:90%"></span>
-</div>
+<section class="welcome">
 
-<!-- Intro -->
+<h1>Welcome</h1>
 
-<section>
-<h1>Welcome Joanna Mae</h1>
+<h2 class="magic-name">Joanna Mae Cabato</h2>
 
-<p class="intro">
-Hello Joanna Mae, I’m so happy you’re here.<br>
+<p>
+Hello Joanna Mae, I am so happy you are here.  
 Every part of this story reminds me of how special it is to know you.
 </p>
 
 <img src="joanna.jpg">
+
 </section>
 
-<!-- Story -->
+<section class="story">
 
-<section>
+<h2>Our Story</h2>
 
-<h2>Our Little Story</h2>
-
-<p class="story">
-Joanna Mae,<br><br>
-
-We may have only met online, but talking to you has been something I really enjoy.<br><br>
-
-You seem like someone who makes people feel comfortable and happy.<br><br>
-
-Getting to know you has been one of the nicest things that happened to me.<br><br>
-
-I'm really glad we met in that game…
+<p>
+Joanna Mae,  
+We may have only met online, but talking to you has been something I really enjoy.  
+You seem like someone who makes people feel comfortable and happy.  
+Getting to know you has been one of the nicest things that happened to me.  
+I am really glad we met in that game.
 </p>
 
 <img src="character.jpg">
 
 </section>
 
-<!-- Why I Like You -->
-
-<section>
+<section class="like">
 
 <h2>Why I Like You</h2>
 
-<div class="why">
-<p class="heart"> Your beautiful smile</p>
-<p class="heart"> How kind and thoughtful you are</p>
-<p class="heart"> The way you make me laugh</p>
-</div>
+<p> Your beautiful smile</p>
+<p> How kind and thoughtful you are</p>
+<p> The way you make me laugh</p>
 
 </section>
 
-<!-- Music -->
+<section class="song">
 
-<section>
-
-<h2>Every Melody Reminds Me of You</h2>
+<h2>Evergreen</h2>
 
 <p>Every melody here carries a piece of you.</p>
-
-<div class="music-box">
-
-<p><b>Evergreen — Westlife</b></p>
 
 <audio controls>
 <source src="evergreen.mp3" type="audio/mpeg">
 </audio>
 
-</div>
-
 </section>
-
-<!-- Magical Name -->
 
 <section>
 
-<h2 class="magic">Joanna Mae</h2>
+<h2 class="magic-name">Joanna Mae</h2>
 
-<p style="font-size:22px">
+<p>
+Sometimes a random game brings two strangers together...  
+and I am really glad it brought me to you.  
 
-Sometimes a random game brings two strangers together…<br><br>
-
-and I'm really glad it brought me to you.<br><br>
-
-Thanks for visiting my little website.<br><br>
-
+Thanks for visiting my little website.  
 I hope it made you smile today.
-
 </p>
 
 </section>
+
+<script>
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="&#10084;";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+}
+
+setInterval(createHeart,500);
+
+</script>
 
 </body>
 </html>
